@@ -6,6 +6,9 @@
 **Status:** Independent Hypothesis — Open for Review and Collaboration
 
 ---
+**Published:** July 2025 (GitHub) | April 2026 (LinkedIn amplification)  
+**License:** CC BY-NC 4.0  
+---
 
 ## Abstract
 
@@ -39,9 +42,9 @@ This hypothesis rests on three propositions. First, that the passive thermal env
 
 A common misconception is that space is uniformly cold. In reality, thermal conditions in space vary significantly depending on proximity to the Sun and exposure to solar radiation. On the lunar surface in direct sunlight, temperatures reach approximately 127°C. This is not a viable environment for quantum hardware in its current form.
 
-However, two environments present meaningfully different conditions. Permanently shadowed regions (PSRs) at the lunar poles — craters that receive no direct sunlight due to the Moon's axial orientation — maintain temperatures as low as 25–40 Kelvin, measured by NASA's Lunar Reconnaissance Orbiter. While this is substantially warmer than the 0.01 Kelvin required by current superconducting architectures, it is significantly colder than any stable Earth surface environment and could serve as a passive pre-cooling stage, dramatically reducing the energy burden on any supplementary active cooling system.
+However, two environments present meaningfully different conditions. Permanently shadowed regions (PSRs) at the lunar poles — craters that receive no direct sunlight due to the Moon's axial orientation — maintain temperatures as low as 25–40 Kelvin, measured by NASA's Lunar Reconnaissance Orbiter. While this is substantially warmer than the 10–20 millikelvin (0.01–0.02 K) required by current superconducting architectures, it is significantly colder than any stable Earth surface environment and could serve as a passive pre-cooling stage, dramatically reducing the energy burden on any supplementary active cooling system.
 
-Deep space beyond Neptune, shielded from direct solar radiation, reaches temperatures approaching 2.7 Kelvin — the temperature of the cosmic microwave background. This is within one order of magnitude of current operating requirements and represents the most promising passive cooling environment identified in this hypothesis.
+Deep space beyond Neptune, shielded from direct solar radiation, reaches temperatures approaching 2.7 Kelvin — the temperature of the cosmic microwave background. This is within two orders of magnitude of current operating requirements (2.7 K vs. ~0.01 K) and represents the most promising passive cooling environment identified in this hypothesis
 
 ### 3.2 Vibration Environment
 
@@ -81,11 +84,25 @@ Research into quantum computing in space has begun to emerge as a formal field. 
 
 ---
 
+## Quantitative Analysis
+
+To evaluate the radiator area requirements for passive cooling at different target temperatures, I built a physics simulation using the Stefan-Boltzmann law:
+
+$$P = \varepsilon \sigma A T^4$$
+
+Where $P$ is the radiated power, $\varepsilon$ is emissivity, $\sigma$ is the Stefan-Boltzmann constant, $A$ is the radiator area, and $T$ is the absolute temperature.
+
+The simulation quantifies the radiator area required to reject heat at temperatures relevant to quantum computing infrastructure — from deep space (2.7 K) to lunar PSRs (~32 K) to Earth-based facilities. Results are visualized in Figure 1 and Figure 3.
+
+Key finding: while deep space and lunar PSRs offer substantial passive cooling advantage over Earth ambient conditions, **neither environment eliminates the need for a final-stage active cooling system** to reach 10–20 mK. The value proposition is reduction of active cooling load, not its elimination.
+
+---
+
 ## 6. Limitations and Open Questions
 
 This hypothesis presents a directional proposition rather than a validated engineering design. Several significant questions remain open and would need to be addressed through further research and simulation before any physical feasibility assessment could be conducted.
 
-The most significant limitation is the temperature gap. Even in the most favourable passive environment identified — deep space at 2.7 Kelvin — current superconducting architectures still require active cooling to reach 0.01 Kelvin. The question of whether the energy and infrastructure savings from passive pre-cooling justify the substantial logistical cost of space deployment is not answered here and would depend heavily on the scale of the quantum computing deployment being considered.
+The most significant limitation is the temperature gap. Even in the most favourable passive environment identified — deep space at 2.7 Kelvin — current superconducting architectures still require active cooling to reach 10–20 millikelvin (0.01–0.02 K). The question of whether the energy and infrastructure savings from passive pre-cooling justify the substantial logistical cost of space deployment is not answered here and would depend heavily on the scale of the quantum computing deployment being considered.
 
 The communication latency constraint limits this architecture to non-interactive workloads. For quantum computing applications requiring low-latency classical-quantum interaction, this approach is not viable in its current form.
 
