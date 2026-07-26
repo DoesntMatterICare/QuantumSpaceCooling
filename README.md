@@ -6,9 +6,13 @@
 **Status:** Independent Hypothesis — Open for Review and Collaboration
 
 ---
+
+
 **Published:** July 2025 (GitHub) | April 2026 (LinkedIn amplification)  
 **License:** CC BY-NC 4.0  
 ---
+[![DOI](https://zenodo.org/badge/960576142.svg)](https://doi.org/10.5281/zenodo.21594713)
+
 
 ## Abstract
 
