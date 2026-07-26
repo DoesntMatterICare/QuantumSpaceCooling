@@ -46,6 +46,8 @@ However, two environments present meaningfully different conditions. Permanently
 
 Deep space beyond Neptune, shielded from direct solar radiation, reaches temperatures approaching 2.7 Kelvin — the temperature of the cosmic microwave background. This is within two orders of magnitude of current operating requirements (2.7 K vs. ~0.01 K) and represents the most promising passive cooling environment identified in this hypothesis
 
+![Figure 1: Temperature comparison across environments](figures/fig1_temperature_comparison.png)
+
 ### 3.2 Vibration Environment
 
 The Moon lacks tectonic activity and has no atmosphere, eliminating the two primary sources of low-frequency vibration that affect Earth-based quantum systems. Residual microseismic activity from meteoroid impacts exists but is orders of magnitude lower in frequency and amplitude than the anthropogenic noise floor on Earth. Deep space removes even this residual source.
@@ -69,6 +71,8 @@ A viable implementation of this hypothesis would involve the following component
 **Classical computing and communication infrastructure.** Classical processing, monitoring, and user interface systems remain on Earth or at an orbital station, communicating with the quantum module via laser or radio links. Latency is an acknowledged constraint that makes this architecture unsuitable for interactive quantum computing applications but viable for batch computation workloads.
 
 **Radiation shielding.** A combination of regolith-based shielding using in-situ lunar material and purpose-built electromagnetic shielding around the quantum module to mitigate cosmic ray exposure.
+
+![Figure 2: Proposed system architecture](figures/fig2_system_architecture.png)
 
 ---
 
@@ -95,6 +99,17 @@ Where $P$ is the radiated power, $\varepsilon$ is emissivity, $\sigma$ is the St
 The simulation quantifies the radiator area required to reject heat at temperatures relevant to quantum computing infrastructure — from deep space (2.7 K) to lunar PSRs (~32 K) to Earth-based facilities. Results are visualized in Figure 1 and Figure 3.
 
 Key finding: while deep space and lunar PSRs offer substantial passive cooling advantage over Earth ambient conditions, **neither environment eliminates the need for a final-stage active cooling system** to reach 10–20 mK. The value proposition is reduction of active cooling load, not its elimination.
+
+
+
+![Figure 3: Relative cost distribution — Earth vs. Space](figures/fig3_cost_distribution.png)
+
+
+
+![Figure 4: Thermal environment across a full lunar cycle](figures/fig4_lunar_cycle.png)
+
+
+![Figure 5: Multi-factor feasibility comparison](figures/fig5_feasibility_radar.png)
 
 ---
 
